@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        AbstractAdderBuilderFactory factory = new AdderBuilderFactory();
+        AbstractAdderBuilderFactory factory = AdderBuilderFactorySingleton.getInstance();
         AdderBuilder builder = factory.createAdderBuilder();
         builder.setA(5);
         builder.setB(7);
